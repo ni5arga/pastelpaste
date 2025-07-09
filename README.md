@@ -16,7 +16,7 @@ pastelpaste is a minimal and modern pastebin web app written in rust using axum 
 ### 1. clone the repo
 ```sh
 git clone https://github.com/ni5arga/pastelpaste
-cd pastelpaste/pastelpaste
+cd pastelpaste
 ```
 
 ### 2. build and run
