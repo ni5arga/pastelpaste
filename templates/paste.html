@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card" style="background: linear-gradient(135deg, #f8fafc 80%, #e0e7ff 100%);">
+    <h1 class="paste-title" style="font-size:2.2rem; font-weight:700; color:#2d3748; margin-bottom:1rem;">{{ title }}</h1>
+    <div class="paste-meta" style="display:flex; flex-wrap:wrap; gap:1.5rem; font-size:1rem; color:#718096; margin-bottom:1.5rem;">
+        <span><b>Created:</b> {{ created_at }}</span>
+        <span><b>Views:</b> {{ views }}</span>
+        <span><b>ID:</b> <code style="font-size:0.95em;">{{ id }}</code></span>
+        <span><b>Language:</b> <span class="language-badge">{{ language }}</span></span>
+    </div>
+    <div class="paste-content" style="background:#fff; border-radius:12px; padding:2rem; border:1px solid #e2e8f0; font-family:'JetBrains Mono','Fira Code',monospace; font-size:1rem; line-height:1.7; box-shadow:0 2px 8px rgba(102,126,234,0.06); min-height: 200px;">
+        {{ content }}
+    </div>
+</div>
+{% endblock %}
